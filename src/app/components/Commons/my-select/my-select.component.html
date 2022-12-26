@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-4">
+    <h4 class="text-right">{{ title }}</h4>
+  </div>
+  <div class="col-md-6">
+    <select [(ngModel)]="selectedValue" name="payment" class="my-select">
+      <option *ngFor="let payment of payments" [value]="payment.value">
+        {{ payment.viewValue }}
+      </option>
+    </select>
+  </div>
+</div>

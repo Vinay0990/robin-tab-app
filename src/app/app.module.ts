@@ -9,6 +9,10 @@ import { PhysicianComponent } from './components/physician/physician.component';
 import { SpecimenComponent } from './components/specimen/specimen.component';
 import { ReviewComponent } from './components/review/review.component';
 import { MaterialModule } from './material/material.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MyInputComponent } from './components/Commons/my-input/my-input.component';
+import { FormsModule } from '@angular/forms';
+import { MySelectComponent } from './components/Commons/my-select/my-select.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +22,16 @@ import { MaterialModule } from './material/material.module';
     PhysicianComponent,
     SpecimenComponent,
     ReviewComponent,
+    MyInputComponent,
+    MySelectComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MaterialModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MaterialModule,
+    NgbModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
